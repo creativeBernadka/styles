@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div>
-      <div className="hero">
+      <div className="hero-section">
         <div className="container">
           <Navbar />
           <Hero />

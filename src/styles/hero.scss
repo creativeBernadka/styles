@@ -1,0 +1,119 @@
+$button-wrapper-height: 200px;
+
+.hero {
+  display: flex;
+  height: 80vh;
+
+  &__image-section {
+    width: 50%;
+    position: relative;
+    background-image: linear-gradient( 45deg, black, transparent);
+  }
+
+  &__button-wrapper {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.-first {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.1);
+      top: calc(50% - #{$button-wrapper-height} / 2);
+      right: calc(50% - #{$button-wrapper-height} / 2);
+      height: $button-wrapper-height;
+      width: $button-wrapper-height;
+    }
+
+    &.-second {
+      background-color: rgba(255, 255, 255, 0.2);
+      height: 0.75 * $button-wrapper-height;
+      width: 0.75 * $button-wrapper-height;
+      box-shadow: 0px 0px 20px 4px $text-gray;
+    }
+  }
+  
+  &__button {
+    background-color: $white;
+    height: 0.5 * $button-wrapper-height;
+    width: 0.5 * $button-wrapper-height;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 0px 20px 4px $text-gray;
+  }
+
+  &__button-icon {
+    width: 2rem;
+    color: $purple;
+  }
+
+  &__text-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 $m-xxl;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    margin: $m-base 0;
+  }
+
+  &__subtitle {
+    color: $text-gray;
+    font-size: 1.25rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin: $m-lg 0;
+  }
+
+  &__form-label {
+    font-size: $text-sm;
+    font-weight: $bold;
+    padding-bottom: $m-sm;
+  }
+
+  &__form-input {
+    padding: $m-base;
+    font-size: $text-base;
+    border: 1px solid $light-gray;
+    background-color: $off-white;
+    border-radius: $radius-sm;
+  }
+
+  &__form-footer {
+    display: flex;
+    margin-top: $m-base;
+    width: 100%;
+  }
+
+  &__form-info {
+    font-size: $text-sm;
+    line-height: 1.5 * $text-sm;
+    flex: 1;
+    color: $text-gray;
+    
+    a {
+      color: $text-gray;
+    }
+  }
+
+  &__form-button {
+    background-color: $green;
+    border: none;
+    border-radius: $radius-sm;
+    height: 100%;
+    padding: 0 $m-md;
+    font-weight: bold;
+    color: $off-white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $purple;
+    }
+  }
+}

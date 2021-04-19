@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-between;
   color: $text-gray;
-  font-size: $text-md;
-  padding: $m-lg 0;
+  font-size: $text-base;
+  padding: $m-md 0;
   align-items: center;
 
   &__logo {
-    max-height: $m-xl;
+    max-height: $m-lg;
   }
 
   &__wrapper {
@@ -21,7 +21,7 @@
   }
 
   &__list-item {
-    margin: 0 $m-md;
+    margin: 0 $m-base;
 
     &:hover {
       color: $purple;
@@ -31,9 +31,9 @@
 
   &__button {
     text-transform: uppercase;
-    padding: 0 1.5*$m-lg;
+    padding: 0 1.5*$m-md;
     margin: 0 $m-sm;
-    height: $m-xl;
+    height: $m-lg;
     border: 1px solid $light-gray;
     color: $text-gray;
     background-color: $off-white;
