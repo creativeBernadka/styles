@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: $text-gray;
+  font-size: $text-md;
+  padding: $m-lg 0;
+  align-items: center;
+
+  &__logo {
+    max-height: $m-xl;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__list-item {
+    margin: 0 $m-md;
+
+    &:hover {
+      color: $purple;
+      cursor: pointer;
+    }
+  }
+
+  &__button {
+    text-transform: uppercase;
+    padding: 0 1.5*$m-lg;
+    margin: 0 $m-sm;
+    height: $m-xl;
+    border: 1px solid $light-gray;
+    color: $text-gray;
+    background-color: $off-white;
+    border-radius: $radius-sm;
+    font-weight: $bold;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $text-gray;    
+      color: $off-white;
+    }
+
+    &.-purple {
+      background-color: $purple;      
+      color: $off-white;
+
+      &:hover {
+        background-color: $text-gray;
+      }
+    }
+  }
+}
