@@ -44,7 +44,7 @@ $button-wrapper-height: 200px;
 
   &__button-icon {
     width: 2rem;
-    color: $purple;
+    fill: $purple;
   }
 
   &__text-section {
@@ -72,7 +72,7 @@ $button-wrapper-height: 200px;
   }
 
   &__form-label {
-    font-size: $text-sm;
+    font-size: $text-xs;
     font-weight: $bold;
     padding-bottom: $m-sm;
   }
@@ -92,8 +92,8 @@ $button-wrapper-height: 200px;
   }
 
   &__form-info {
-    font-size: $text-sm;
-    line-height: 1.5 * $text-sm;
+    font-size: $text-xs;
+    line-height: 1.5 * $text-xs;
     flex: 1;
     color: $text-gray;
     
@@ -103,7 +103,7 @@ $button-wrapper-height: 200px;
   }
 
   &__form-button {
-    background-color: $green;
+    background-image: linear-gradient( 35deg, $dark-green, $light-green);
     border: none;
     border-radius: $radius-sm;
     height: 100%;

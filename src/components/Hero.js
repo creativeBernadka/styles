@@ -1,3 +1,5 @@
+import PlayIcon from "../icons/PlayIcon";
+
 const Hero = () => (
   <div className="hero">
     <div className="hero__image-section">
@@ -5,7 +7,7 @@ const Hero = () => (
       <div className="hero__button-wrapper -first">
         <div className="hero__button-wrapper -second">
           <button className="hero__button">
-            <img src="play-icon.svg" className="hero__button-icon" />
+            <PlayIcon className="hero__button-icon"/>
           </button>
         </div>
       </div>
@@ -14,10 +16,10 @@ const Hero = () => (
       <h1 className="hero__title">
         Communicate. <br /> Collaborate. Complete.
       </h1>
-      <h2 className="hero__subtitle">
+      <h3 className="hero__subtitle">
         The remote collaboration tool to help you communicate effectively & work
         productively
-      </h2>
+      </h3>
       <form className="hero__form">
         <label htmlFor="email-input" className="hero__form-label">
           Email address
