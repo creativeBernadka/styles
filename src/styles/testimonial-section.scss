@@ -1,0 +1,86 @@
+.testimonials {
+  padding: $m-xxl 0;
+
+  &__header {
+    text-align: center;
+    margin: 0;
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    margin: $m-lg;
+    height: 60vh;
+  }
+
+  &__navigation-button {
+    flex-basis: 2rem;
+    flex-shrink: 0;
+    height: 2rem;
+    background-color: $light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__navigation-icon {
+    fill: $text-gray;
+    width: 1rem;
+  }
+
+  &__text-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__text-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  &__testimonial-text {
+    background-color: $white;
+    padding: $m-lg;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__quotation-mark{
+    width: 3rem;
+    fill: $light-gray;
+
+     &.-right {
+       align-self: flex-end;
+     }
+  }
+
+  &__image {
+    height: 100%;
+    flex-basis: 45%;
+    flex-shrink: 0;
+
+    img {
+      height: 100%
+    }
+  }
+
+  &__navigation-pages {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__navigation-single-page {
+    width: 3rem;
+    height: 3px;
+    background-color: $light-gray;
+    margin: 0 $m-sm;
+
+    &.-selected {
+      background-color: $text-gray;
+    }
+  }
+}
