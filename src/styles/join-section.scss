@@ -1,0 +1,47 @@
+.join-section {
+
+  &__wrapper {
+    color: $white;
+    display: flex;
+    padding: $m-xxl 0;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__form {
+    margin-left: $m-xxl;
+  }
+
+  &__input-wrapper {
+    display: flex;
+    margin: $m-sm 0;
+  }
+
+  &__form-label {
+    font-size: $text-xs;
+    font-weight: $bold;
+  }
+
+  &__form-input {
+    min-width: 20vw;
+  }
+
+  &__form-button {
+    background-image: linear-gradient(25deg, #492687, #5C33A7);
+    border: none;
+    border-radius: $radius-sm;
+    padding: 0 $m-md;
+    font-weight: bold;
+    color: $off-white;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-left: $m-md;
+  }
+
+  &__link {
+    font-size: $text-xs;
+    color: $white
+  }
+}

@@ -6,3 +6,21 @@
 .hero-section {
   background-image: linear-gradient(to right, $off-white, 40%,  $white);
 }
+
+.join-section {
+  background-image: linear-gradient(to right, $dark-purple, 40%,  $light-purple);
+}
+
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+input {
+  padding: $m-base;
+  font-size: $text-base;
+  border: 1px solid $light-gray;
+  background-color: $off-white;
+  border-radius: $radius-sm;
+}

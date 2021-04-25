@@ -3,6 +3,7 @@ import "./styles/App.scss";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import TileSection from "./components/TileSection";
+import JoinSection from "./components/JoinSection";
 
 function App() {
   return (
@@ -15,6 +16,11 @@ function App() {
       </div>
       <div className="container">
         <TileSection />
+      </div>
+      <div className="join-section">
+        <div className="container">
+          <JoinSection />
+        </div>
       </div>
     </div>
   );
