@@ -1,3 +1,4 @@
+import Clients from "./Clients";
 import ChevronLeftIcon from "../icons/ChevronLeftIcon";
 import ChevronRightIcon from "../icons/ChevronRightIcon";
 import ClosingQuoteIcon from "../icons/ClosingQuoteIcon";
@@ -42,7 +43,7 @@ const TestimonialSection = () => (
         <ChevronRightIcon className="testimonials__navigation-icon" />
       </div>
     </div>
-    <h3>Smart companies use smart tools</h3>
+    <Clients />
   </div>
 );
 
