@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import TileSection from "./components/TileSection";
 import JoinSection from "./components/JoinSection";
 import TestimonialSection from "./components/TestimonialSection";
+import PricingSection from "./components/PricingSection";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         <div className="container">
           <TestimonialSection />
         </div>
+      </div>
+      <div className="container">
+        <PricingSection />
       </div>
     </div>
   );

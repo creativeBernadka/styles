@@ -1,0 +1,108 @@
+$triangle-height: 4rem;
+
+.pricing-tile {
+  &__wrapper {
+    border: 1px solid $light-gray;
+    border-radius: $radius-sm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: $m-lg;
+    flex: 1 25%;
+    position: relative;
+  }
+
+  &__best-tag {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 $triangle-height $triangle-height 0;
+    border-color: transparent $dark-pink transparent transparent;
+  }
+
+  &__best-tag-text {
+    color: $off-white;
+    font-size: $text-xs;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    transform-origin: 75% 60%;
+    width: $triangle-height;
+    height: $triangle-height;
+  }
+
+  &__plan-name {
+    font-weight: bold;
+    margin-bottom: $m-base;
+
+    &.-normal {
+      font-weight: normal;
+    }
+
+    &.-blue {
+      color: $light-blue;
+    }
+  }
+
+  &__contact-us {
+    font-weight: bold;
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
+
+  &__price {
+    display: flex;
+  }  
+
+  &__dollar-sign {
+    align-self: flex-start;
+    color: $text-gray;
+    font-size: $text-xs;
+  }
+
+  &__value {
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    padding: 0 $m-xs;
+  }
+
+  &__month-text {
+    align-self: flex-end;
+    color: $text-gray;
+    font-size: $text-xs;
+  }
+
+  &__users {
+    margin: $m-base 0;
+  }
+
+  &__description-line {
+    font-size: $text-sm;
+    color: $text-gray;
+    text-align: center;
+    margin: $m-xs 0;
+  }
+
+  &__button {
+    background-image: linear-gradient(0deg, $dark-green, $light-green);
+    border: none;
+    border-radius: $radius-sm;
+    font-weight: $bold;
+    color: $off-white;
+    cursor: pointer;
+    white-space: nowrap;
+    height: $m-lg;
+    width: 100%;
+    margin-top: $m-base;
+
+    &.-blue {
+      background-image: linear-gradient(0deg, $dark-blue, $light-blue);
+    }
+  }
+}
