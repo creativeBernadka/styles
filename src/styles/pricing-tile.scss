@@ -104,5 +104,9 @@ $triangle-height: 4rem;
     &.-blue {
       background-image: linear-gradient(0deg, $dark-blue, $light-blue);
     }
+
+    &:hover {
+      background-image: linear-gradient(0deg, $dark-purple, $light-purple);
+    }
   }
 }

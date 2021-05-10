@@ -37,9 +37,9 @@ const pricingPlans = [
     planName: "Pro",
     UserComponent: () => (
       <div className="user-selector">
-        <button>-</button>
-        <div>5 users</div>
-        <button>+</button>
+        <button className="user-selector__button">-</button>
+        <div className="user-selector__display">5 users</div>
+        <button className="user-selector__button">+</button>
       </div>
     ),
     FirstLineDescription: ({ className }) => (
@@ -77,7 +77,7 @@ const PricingSection = () => (
         <PricingTile {...plan} />
       ))}
     </div>
-    <a href="/pricing">Check packages & pricing in details</a>
+    <a href="/pricing" className="pricing__link">Check packages & pricing in details</a>
   </div>
 );
 

@@ -12,9 +12,48 @@
     width: 100%;
     margin: $m-lg 0;
   }
+
+  &__link {
+    color: $purple;
+    font-size: $text-sm;
+
+    &:hover {
+      color: $dark-pink;
+    }
+  }
 }
 
 
 .user-selector {
   display: flex;
+
+  &__button {
+    padding: 0 $m-sm;
+    border: 1px solid $light-gray;
+    color: $text-gray;
+    background-color: $off-white;
+    font-weight: $bold;
+    cursor: pointer;
+
+    &:first-of-type{
+      border-top-left-radius: $radius-sm;
+      border-bottom-left-radius: $radius-sm;
+    }
+
+    &:last-of-type{
+      border-top-right-radius: $radius-sm;
+      border-bottom-right-radius: $radius-sm;
+    }
+
+    &:hover {
+      background-color: $light-gray;
+    }
+  }
+
+  &__display {
+    border-top: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+    font-size: $text-sm;
+    padding: $m-xs;
+  }
 }
