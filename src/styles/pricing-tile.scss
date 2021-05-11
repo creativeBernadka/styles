@@ -2,38 +2,38 @@ $triangle-height: 4rem;
 
 .pricing-tile {
   &__wrapper {
+    align-items: center;
     border: 1px solid $light-gray;
     border-radius: $radius-sm;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     padding: $m-lg;
-    flex: 1 25%;
     position: relative;
+    width: 100%;
   }
 
   &__best-tag {
+    border-color: transparent $dark-pink transparent transparent;
+    border-style: solid;
+    border-width: 0 $triangle-height $triangle-height 0;
+    height: 0;
     position: absolute;
     right: 0;
     top: 0;
     width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 $triangle-height $triangle-height 0;
-    border-color: transparent $dark-pink transparent transparent;
   }
 
   &__best-tag-text {
-    color: $off-white;
-    font-size: $text-xs;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    color: $off-white;
+    display: flex;
+    font-size: $text-xs;
+    height: $triangle-height;
+    justify-content: center;
     transform: rotate(45deg);
     transform-origin: 75% 60%;
     width: $triangle-height;
-    height: $triangle-height;
   }
 
   &__plan-name {
@@ -66,8 +66,8 @@ $triangle-height: 4rem;
   }
 
   &__value {
-    font-weight: bold;
     font-size: 3.5rem;
+    font-weight: bold;
     line-height: 3rem;
     padding: 0 $m-xs;
   }
@@ -83,23 +83,23 @@ $triangle-height: 4rem;
   }
 
   &__description-line {
-    font-size: $text-sm;
     color: $text-gray;
-    text-align: center;
+    font-size: $text-sm;
     margin: $m-xs 0;
+    text-align: center;
   }
 
   &__button {
     background-image: linear-gradient(0deg, $dark-green, $light-green);
     border: none;
     border-radius: $radius-sm;
-    font-weight: $bold;
     color: $off-white;
     cursor: pointer;
-    white-space: nowrap;
+    font-weight: $bold;
     height: $m-lg;
-    width: 100%;
     margin-top: $m-base;
+    white-space: nowrap;
+    width: 100%;
 
     &.-blue {
       background-image: linear-gradient(0deg, $dark-blue, $light-blue);
@@ -107,6 +107,18 @@ $triangle-height: 4rem;
 
     &:hover {
       background-image: linear-gradient(0deg, $dark-purple, $light-purple);
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    &__wrapper {
+      flex: 1 0 45%;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    &__wrapper {
+      flex: 1 0 20%;
     }
   }
 }
