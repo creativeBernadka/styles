@@ -8,9 +8,9 @@ const TestimonialSection = () => (
   <div className="testimonials">
     <h2 className="testimonials__header">Find out what others make of us:</h2>
     <div className="testimonials__slider">
-      <div className="testimonials__navigation-button">
+      <button className="testimonials__navigation-button -desktop">
         <ChevronLeftIcon className="testimonials__navigation-icon" />
-      </div>
+      </button>
       <div className="testimonials__text-section">
         <div className="testimonials__text-wrapper">
           <div className="testimonials__testimonial-text">
@@ -30,6 +30,14 @@ const TestimonialSection = () => (
             <ClosingQuoteIcon className="testimonials__quotation-mark -right" />
           </div>
         </div>
+        <div className="testimonials__mobile-buttons-wrapper">
+          <button className="testimonials__navigation-button">
+            <ChevronLeftIcon className="testimonials__navigation-icon" />
+          </button>
+          <button className="testimonials__navigation-button">
+            <ChevronRightIcon className="testimonials__navigation-icon" />
+          </button>
+        </div>
         <div className="testimonials__navigation-pages">
           <div className="testimonials__navigation-single-page -selected" />
           <div className="testimonials__navigation-single-page" />
@@ -39,9 +47,9 @@ const TestimonialSection = () => (
       <div className="testimonials__image">
         <img src="testimonial.png" />
       </div>
-      <div className="testimonials__navigation-button">
+      <button className="testimonials__navigation-button -desktop">
         <ChevronRightIcon className="testimonials__navigation-icon" />
-      </div>
+      </button>
     </div>
     <Clients />
   </div>
