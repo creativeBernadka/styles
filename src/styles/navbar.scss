@@ -1,27 +1,54 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  color: $text-gray;
-  font-size: $text-base;
-  padding: $m-md 0;
   align-items: center;
+  color: $text-gray;
+  display: flex;
+  flex-direction: row;
+  font-size: $text-base;
+  justify-content: space-between;
+  padding: $m-md;
+  position: relative;
 
   &__logo {
     max-height: $m-lg;
   }
 
+  &__burger {
+    background-color: transparent;
+    border: none;
+  }
+
+  &__burger-bar {
+    background-color: $dark-purple;
+    height: 2px;
+    margin: $m-xs 0;
+    width: 1.5rem;
+  }
+
   &__wrapper {
-    display: flex;
-    align-items: center;
+    background-color: $white;
+    display: none;
+    height: 100vh;
+    left: 0;
+    padding: $m-lg 0;
+    position: absolute;
+    top: $m-xxl;
+    width: 100%;
+    z-index: 100;
+
+    &.-displayed {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__list {
     display: flex;
+    flex-direction: column;
     list-style: none;
   }
 
   &__list-item {
-    margin: 0 $m-base;
+    margin: $m-base 0;
 
     &:hover {
       color: $purple;
@@ -30,16 +57,16 @@
   }
 
   &__button {
-    text-transform: uppercase;
-    padding: 0 1.5*$m-md;
-    margin: 0 $m-sm;
-    height: $m-lg;
-    border: 1px solid $light-gray;
-    color: $text-gray;
     background-color: $off-white;
+    border: 1px solid $light-gray;
     border-radius: $radius-sm;
-    font-weight: $bold;
+    color: $text-gray;
     cursor: pointer;
+    font-weight: $bold;
+    height: $m-lg;
+    margin: $m-sm;
+    padding: 0 1.5*$m-md;
+    text-transform: uppercase;
 
     &:hover {
       background-color: $text-gray;    
@@ -53,6 +80,35 @@
       &:hover {
         background-color: $text-gray;
       }
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    padding: 0 $m-md;
+
+    &__burger {
+      display: none;
+    }
+
+    &__wrapper {
+      align-items: center;
+      background-color: transparent;
+      display: flex;
+      height: fit-content;
+      position: static;
+      width: fit-content;
+    }
+
+    &__list {
+      flex-direction: row;
+    }
+
+    &__list-item {
+      margin: 0 $m-base;
+    }
+
+    &__button {
+      margin: 0 $m-sm;
     }
   }
 }

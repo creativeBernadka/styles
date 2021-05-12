@@ -38,6 +38,10 @@
     min-height: 3rem;
     padding: 0 $m-md;
     white-space: nowrap;
+
+    &:hover {
+      background-image: linear-gradient(25deg, $dark-pink, $light-pink);
+    }
   }
 
   &__link {

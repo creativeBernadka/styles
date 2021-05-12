@@ -29,3 +29,33 @@ $m-md: 24px;
 $m-lg: 36px;
 $m-xl: 48px;
 $m-xxl: 72px;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 750px,
+  lg: 970px,
+  xl: 1170px
+);
+
+$screen-xs: map_get($grid-breakpoints, "sm");
+$screen-xs-min: $screen-xs;
+$screen-xs-max: map_get($grid-breakpoints, "md") - 1;
+
+$screen-sm: map_get($grid-breakpoints, "md");
+$screen-sm-min: $screen-sm;
+$screen-sm-max: map_get($grid-breakpoints, "lg") - 1;
+
+$screen-md: map_get($grid-breakpoints, "lg");
+$screen-md-min: $screen-md;
+$screen-md-max: map_get($grid-breakpoints, "xl") - 1;
+
+$screen-lg: map_get($grid-breakpoints, "xl");
