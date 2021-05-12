@@ -5,54 +5,14 @@ $button-wrapper-height: 200px;
   height: 80vh;
 
   &__image-section {
-    width: 50%;
-    position: relative;
-    background-image: linear-gradient( 45deg, black, transparent);
-  }
-
-  &__button-wrapper {
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &.-first {
-      position: absolute;
-      background-color: rgba(255, 255, 255, 0.1);
-      top: calc(50% - #{$button-wrapper-height} / 2);
-      right: calc(50% - #{$button-wrapper-height} / 2);
-      height: $button-wrapper-height;
-      width: $button-wrapper-height;
-    }
-
-    &.-second {
-      background-color: rgba(255, 255, 255, 0.2);
-      height: 0.75 * $button-wrapper-height;
-      width: 0.75 * $button-wrapper-height;
-      box-shadow: 0px 0px 20px 4px $text-gray;
-    }
-  }
-  
-  &__button {
-    background-color: $white;
-    height: 0.5 * $button-wrapper-height;
-    width: 0.5 * $button-wrapper-height;
-    border-radius: 50%;
-    border: none;
-    box-shadow: 0px 0px 20px 4px $text-gray;
-  }
-
-  &__button-icon {
-    width: 2rem;
-    fill: $purple;
+    display: none;
   }
 
   &__text-section {
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 $m-xxl;
+    padding: $m-md;
   }
 
   &__title {
@@ -79,15 +39,17 @@ $button-wrapper-height: 200px;
 
   &__form-footer {
     display: flex;
+    flex-direction: column-reverse;
     margin-top: $m-base;
     width: 100%;
   }
 
   &__form-info {
+    color: $text-gray;
+    flex: 1;
     font-size: $text-xs;
     line-height: 1.5 * $text-xs;
-    flex: 1;
-    color: $text-gray;
+    margin-top: $m-base;
     
     a {
       color: $text-gray;
@@ -98,14 +60,82 @@ $button-wrapper-height: 200px;
     background-image: linear-gradient(35deg, $dark-green, $light-green);
     border: none;
     border-radius: $radius-sm;
-    height: 100%;
-    padding: 0 $m-md;
-    font-weight: bold;
     color: $off-white;
     cursor: pointer;
+    font-weight: bold;
+    min-height: 3rem;
+    padding: 0 $m-md;
 
     &:hover {
       background-color: $purple;
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    &__image-section {
+      background-image: linear-gradient( 45deg, black, transparent);
+      display: block;
+      position: relative;
+      width: 50%;
+    }
+
+    &__button-wrapper {
+      align-items: center;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+  
+      &.-first {
+        background-color: rgba(255, 255, 255, 0.1);
+        height: $button-wrapper-height;
+        position: absolute;
+        right: calc(50% - #{$button-wrapper-height} / 2);
+        top: calc(50% - #{$button-wrapper-height} / 2);
+        width: $button-wrapper-height;
+      }
+  
+      &.-second {
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 20px 4px $text-gray;
+        height: 0.75 * $button-wrapper-height;
+        width: 0.75 * $button-wrapper-height;
+      }
+    }
+    
+    &__button {
+      background-color: $white;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0px 0px 20px 4px $text-gray;
+      height: 0.5 * $button-wrapper-height;
+      width: 0.5 * $button-wrapper-height;
+    }
+  
+    &__button-icon {
+      fill: $purple;
+      width: 2rem;
+    }
+
+    &__text-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 $m-xxl;
+      width: 50%;
+    }
+
+    &__form-button {
+      height: 100%;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    &__form-footer {
+      flex-direction: row;
+    }
+
+    &__form-info {
+      margin-top: 0;
     }
   }
 }
