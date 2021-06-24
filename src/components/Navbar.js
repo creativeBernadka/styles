@@ -1,4 +1,5 @@
 import { useState } from "react";
+import classnames from "classnames";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -11,7 +12,9 @@ const Navbar = () => {
         <div className="navbar__burger-bar" />
         <div className="navbar__burger-bar" />
       </button>
-      <nav className={`navbar__wrapper ${showMenu && '-displayed'}`}>
+      <nav
+        className={classnames("navbar__wrapper", { "-displayed": showMenu })}
+      >
         <ul className="navbar__list">
           <li className="navbar__list-item">Features</li>
           <li className="navbar__list-item">Apps</li>

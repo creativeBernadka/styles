@@ -40,11 +40,11 @@ $triangle-height: 4rem;
     font-weight: bold;
     margin-bottom: $m-base;
 
-    &.-normal {
+    &.-primary {
       font-weight: normal;
     }
 
-    &.-blue {
+    &.-secondary {
       color: $light-blue;
     }
   }
@@ -101,7 +101,7 @@ $triangle-height: 4rem;
     white-space: nowrap;
     width: 100%;
 
-    &.-blue {
+    &.-secondary {
       background-image: linear-gradient(0deg, $dark-blue, $light-blue);
     }
 

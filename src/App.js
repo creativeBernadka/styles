@@ -9,7 +9,7 @@ import PricingSection from "./components/PricingSection";
 
 function App() {
   return (
-    <div>
+    <>
       <div className="hero-section">
         <div className="container">
           <Navbar />
@@ -32,7 +32,7 @@ function App() {
       <div className="container">
         <PricingSection />
       </div>
-    </div>
+    </>
   );
 }
 

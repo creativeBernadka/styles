@@ -1,3 +1,5 @@
+import classnames from "classnames";
+
 const PricingTile = ({
   price,
   planName,
@@ -15,9 +17,10 @@ const PricingTile = ({
       </div>
     )}
     <div
-      className={`pricing-tile__plan-name ${planName === "Free" && "-normal"} ${
-        isEnterprise && "-blue"
-      }`}
+      className={classnames("pricing-tile__plan-name", {
+        "-primary": planName === "Free",
+        "-secondary": isEnterprise,
+      })}
     >
       {planName}
     </div>
@@ -28,8 +31,11 @@ const PricingTile = ({
         <span className="pricing-tile__dollar-sign">$</span>
         <span className="pricing-tile__value">{price}</span>
         <div className="pricing-tile__month-text">
-          <div>per</div>
-          <div>month</div>
+          <div>
+            per
+            <br />
+            month
+          </div>
         </div>
       </div>
     )}
@@ -38,7 +44,11 @@ const PricingTile = ({
     </div>
     <FirstLineDescription className="pricing-tile__description-line" />
     <SecondLineDescription className="pricing-tile__description-line" />
-    <button className={`pricing-tile__button ${isEnterprise && "-blue"}`}>
+    <button
+      className={classnames("pricing-tile__button", {
+        "-secondary": isEnterprise,
+      })}
+    >
       {isEnterprise ? "Contact us" : "Select Plan"}
     </button>
   </div>
