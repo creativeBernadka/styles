@@ -44,9 +44,7 @@ const TestimonialSection = () => (
           <div className="testimonials__navigation-single-page" />
         </div>
       </div>
-      <div className="testimonials__image">
-        <img src="testimonial.png" />
-      </div>
+      <img src="testimonial.png" className="testimonials__image"/>
       <button className="testimonials__navigation-button -desktop">
         <ChevronRightIcon className="testimonials__navigation-icon" />
       </button>

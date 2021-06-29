@@ -3,14 +3,9 @@ import PlayIcon from "../icons/PlayIcon";
 const Hero = () => (
   <div className="hero">
     <div className="hero__image-section">
-      <img src="hero-image.png" alt="hero" className="hero__main-image" />
-      <div className="hero__button-wrapper -first">
-        <div className="hero__button-wrapper -second">
-          <button className="hero__button">
-            <PlayIcon className="hero__button-icon"/>
-          </button>
-        </div>
-      </div>
+      <button className="hero__button">
+        <PlayIcon className="hero__button-icon" />
+      </button>
     </div>
     <div className="hero__text-section">
       <h1 className="hero__title">
