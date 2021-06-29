@@ -1,5 +1,3 @@
-import PlayIcon from "../icons/PlayIcon";
-
 const JoinSection = () => (
   <div className="join-section__wrapper">
     <h2 className="join-section__title">

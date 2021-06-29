@@ -1,7 +1,7 @@
-import CloudIcon from "../icons/CloudIcon";
-import MouseClickIcon from "../icons/MouseClickIcon";
-import RocketIcon from "../icons/RocketIcon";
-import SquaresIcon from "../icons/SquaresIcon";
+import { ReactComponent as CloudIcon } from "../icons/CloudIcon.svg";
+import { ReactComponent as MouseClickIcon } from "../icons/MouseClickIcon.svg";
+import { ReactComponent as RocketIcon } from "../icons/RocketIcon.svg";
+import { ReactComponent as SquaresIcon } from "../icons/SquaresIcon.svg";
 
 const tiles = [
   {

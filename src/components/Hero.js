@@ -1,4 +1,4 @@
-import PlayIcon from "../icons/PlayIcon";
+import { ReactComponent as PlayIcon } from "../icons/PlayIcon.svg";
 
 const Hero = () => (
   <div className="hero">

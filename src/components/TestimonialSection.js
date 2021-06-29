@@ -1,8 +1,8 @@
 import Clients from "./Clients";
-import ChevronLeftIcon from "../icons/ChevronLeftIcon";
-import ChevronRightIcon from "../icons/ChevronRightIcon";
-import ClosingQuoteIcon from "../icons/ClosingQuoteIcon";
-import OpeningQuoteIcon from "../icons/OpeningQuoteIcon";
+import { ReactComponent as ChevronLeftIcon } from "../icons/ChevronLeftIcon.svg";
+import { ReactComponent as ChevronRightIcon } from "../icons/ChevronRightIcon.svg";
+import { ReactComponent as ClosingQuoteIcon } from "../icons/ClosingQuoteIcon.svg";
+import { ReactComponent as OpeningQuoteIcon } from "../icons/OpeningQuoteIcon.svg";
 
 const TestimonialSection = () => (
   <div className="testimonials">

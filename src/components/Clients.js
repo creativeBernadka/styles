@@ -1,13 +1,13 @@
-import NikeIcon from "../icons/NikeIcon";
-import YahooIcon from "../icons/YahooIcon";
-import IntelIcon from "../icons/IntelIcon";
-import TedIcon from "../icons/TedIcon";
-import AdobeIcon from "../icons/AdobeIcon";
-import PixarIcon from "../icons/PixarIcon";
-import CiscoIcon from "../icons/CiscoIcon";
-import TargetIcon from "../icons/TargetIcon";
-import AirbnbIcon from "../icons/AirbnbIcon";
-import EbayIcon from "../icons/EbayIcon";
+import { ReactComponent as NikeIcon } from "../icons/NikeIcon.svg";
+import { ReactComponent as YahooIcon } from "../icons/YahooIcon.svg";
+import { ReactComponent as IntelIcon } from "../icons/IntelIcon.svg";
+import { ReactComponent as TedIcon } from "../icons/TedIcon.svg";
+import { ReactComponent as AdobeIcon } from "../icons/AdobeIcon.svg";
+import { ReactComponent as PixarIcon } from "../icons/PixarIcon.svg";
+import { ReactComponent as CiscoIcon } from "../icons/CiscoIcon.svg";
+import { ReactComponent as TargetIcon } from "../icons/TargetIcon.svg";
+import { ReactComponent as AirbnbIcon } from "../icons/AirbnbIcon.svg";
+import { ReactComponent as EbayIcon } from "../icons/EbayIcon.svg";
 
 const clientsIconsArray = [
   NikeIcon,
