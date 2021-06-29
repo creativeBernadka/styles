@@ -1,23 +1,38 @@
-import './styles/App.scss';
+import "./styles/App.scss";
+
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import TileSection from "./components/TileSection";
+import JoinSection from "./components/JoinSection";
+import TestimonialSection from "./components/TestimonialSection";
+import PricingSection from "./components/PricingSection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="hero-section">
+        <div className="container">
+          <Navbar />
+          <Hero />
+        </div>
+      </div>
+      <div className="container">
+        <TileSection />
+      </div>
+      <div className="join-section">
+        <div className="container">
+          <JoinSection />
+        </div>
+      </div>
+      <div className="testimonial-section">
+        <div className="container">
+          <TestimonialSection />
+        </div>
+      </div>
+      <div className="container">
+        <PricingSection />
+      </div>
+    </>
   );
 }
 

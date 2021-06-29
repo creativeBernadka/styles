@@ -1,0 +1,124 @@
+$triangle-height: 4rem;
+
+.pricing-tile {
+  &__wrapper {
+    align-items: center;
+    border: 1px solid $light-gray;
+    border-radius: $radius-sm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $m-lg;
+    position: relative;
+    width: 100%;
+  }
+
+  &__best-tag {
+    border-color: transparent $dark-pink transparent transparent;
+    border-style: solid;
+    border-width: 0 $triangle-height $triangle-height 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+  }
+
+  &__best-tag-text {
+    align-items: center;
+    color: $off-white;
+    display: flex;
+    font-size: $text-xs;
+    height: $triangle-height;
+    justify-content: center;
+    transform: rotate(45deg);
+    transform-origin: 75% 60%;
+    width: $triangle-height;
+  }
+
+  &__plan-name {
+    font-weight: bold;
+    margin-bottom: $m-base;
+
+    &.-primary {
+      font-weight: normal;
+    }
+
+    &.-secondary {
+      color: $light-blue;
+    }
+  }
+
+  &__contact-us {
+    font-weight: bold;
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
+
+  &__price {
+    display: flex;
+  }  
+
+  &__dollar-sign {
+    align-self: flex-start;
+    color: $text-gray;
+    font-size: $text-xs;
+  }
+
+  &__value {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+    padding: 0 $m-xs;
+  }
+
+  &__month-text {
+    align-self: flex-end;
+    color: $text-gray;
+    font-size: $text-xs;
+  }
+
+  &__users {
+    margin: $m-base 0;
+  }
+
+  &__description-line {
+    color: $text-gray;
+    font-size: $text-sm;
+    margin: $m-xs 0;
+    text-align: center;
+  }
+
+  &__button {
+    background-image: linear-gradient(0deg, $dark-green, $light-green);
+    border: none;
+    border-radius: $radius-sm;
+    color: $off-white;
+    cursor: pointer;
+    font-weight: $bold;
+    height: $m-lg;
+    margin-top: $m-base;
+    white-space: nowrap;
+    width: 100%;
+
+    &.-secondary {
+      background-image: linear-gradient(0deg, $dark-blue, $light-blue);
+    }
+
+    &:hover {
+      background-image: linear-gradient(0deg, $dark-purple, $light-purple);
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    &__wrapper {
+      flex: 1 0 45%;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    &__wrapper {
+      flex: 1 0 20%;
+    }
+  }
+}

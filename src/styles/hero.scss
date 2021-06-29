@@ -1,0 +1,123 @@
+$button-height: 100px;
+
+.hero {
+  display: flex;
+  min-height: 80vh;
+
+  &__image-section {
+    display: none;
+  }
+
+  &__text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $m-md;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    margin: $m-base 0;
+  }
+
+  &__subtitle {
+    color: $text-gray;
+    font-size: 1.25rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin: $m-lg 0;
+  }
+
+  &__form-label {
+    font-size: $text-xs;
+    font-weight: $bold;
+    padding-bottom: $m-sm;
+  }
+
+  &__form-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: $m-base;
+    width: 100%;
+  }
+
+  &__form-info {
+    color: $text-gray;
+    flex: 1;
+    font-size: $text-xs;
+    line-height: 1.5 * $text-xs;
+    margin-top: $m-base;
+    
+    a {
+      color: $text-gray;
+    }
+  }
+
+  &__form-button {
+    background-image: linear-gradient(35deg, $dark-green, $light-green);
+    border: none;
+    border-radius: $radius-sm;
+    color: $off-white;
+    cursor: pointer;
+    font-weight: bold;
+    min-height: 3rem;
+    padding: 0 $m-md;
+
+    &:hover {
+      background-image: linear-gradient(35deg, $dark-purple, $light-purple);
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    &__image-section {
+      background-image: linear-gradient( 45deg, black, transparent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+    }
+    
+    &__button {
+      background-color: $white;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 
+        0px 0px 20px 4px $text-gray,
+        0px 0px 0px 24px rgba(255, 255, 255, 0.2),
+        0px 0px 20px 28px $text-gray,
+        0px 0px 0px 44px rgba(255, 255, 255, 0.1);
+      height: $button-height;
+      width: $button-height;
+    }
+  
+    &__button-icon {
+      fill: $purple;
+      width: 2rem;
+    }
+
+    &__text-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 $m-xxl;
+      width: 50%;
+    }
+
+    &__form-button {
+      height: 100%;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    &__form-footer {
+      flex-direction: row;
+    }
+
+    &__form-info {
+      margin-top: 0;
+    }
+  }
+}
